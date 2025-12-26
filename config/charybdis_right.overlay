@@ -1,6 +1,7 @@
 // charybdis_right.overlay
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/pinctrl/nrf-pinctrl.h>  // <--- ⭐ 이 줄이 없어서 에러가 났던 겁니다!
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -44,4 +45,3 @@
         device = <&trackball>;
     };
 };
-
