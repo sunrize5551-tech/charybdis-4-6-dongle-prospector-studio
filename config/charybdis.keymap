@@ -2,11 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-
-// ----------------------------------------------------------------
-// 판매자 원본 키맵 복원 (사진 기반)
-// ----------------------------------------------------------------
-
 &sk {
     release-after-ms = <600>;
     quick-release;
@@ -20,7 +15,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // [Layer 0] 기본 타자 & 마우스 클릭
 
         Base {
             label = "Base";
@@ -34,7 +28,7 @@
             >;
         };
 
-        // [Layer 1] 펑션키, 화살표, 블루투스 초기화
+    
 
         Lower {
             label = "Lower";
