@@ -1,7 +1,62 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
-  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, LSHFT, A, S, D, F, G, H, J, K, L, ;, '''', LCTRL, Z, X,
-    C, V, B, N, M, ',', '[', /, '-', LALT, SPACE, Lower, LGUI, SPACE, ENTER, '&mkp MB1', '&mkp MB2']
+  Base:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''''
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - BACK SPACE
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LEFT WIN
+  - A
+  - S
+  - D
+  - F
+  - G
+  - DEL
+  - H
+  - J
+  - K
+  - L
+  - '='
+  - {t: Lower, h: toggle}
+  - Z
+  - X
+  - C
+  - V
+  - LEFT CONTROL
+  - .
+  - B
+  - N
+  - M
+  - /
+  - ','
+  - LEFT SHIFT
+  - LEFT ALT
+  - SPACE
+  - ENTER
+  - RIGHT SHIFT
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - RIGHT ALT
   Lower:
   - F1
   - F2
@@ -25,37 +80,37 @@ layers:
   - ''
   - UP
   - ''
-  - ''
-  - ''
-  - LSHFT
-  - ''
-  - ''
-  - ''
-  - BT NXT
+  - '['
+  - ']'
+  - LEFT WIN
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - BT CLR
   - ''
   - LEFT
   - DOWN
   - RIGHT
-  - ''
-  - ''
-  - LCTRL
-  - ''
-  - ''
-  - ''
+  - \
+  - ;
+  - {t: Base, h: toggle}
   - ''
   - ''
   - ''
-  - .
-  - ']'
-  - ''
-  - '='
-  - ''
-  - LALT
-  - SPACE
-  - {t: Base, h: toggle, type: held}
   - ''
   - ''
-  - ENTER
-  - '&mkp MB1'
-  - '&mkp MB2'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '-'
+  - RIGHT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
