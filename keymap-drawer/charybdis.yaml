@@ -1,49 +1,100 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
-  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
-    C, V, B, N, M, ',', ., /, ']', Mouse, RET, LEFT GUI, LCTRL, SPACE, LEFT ALT, Symbol, BSPC]
-  Mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LGUI
-  - LALT
+  Base:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''''
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - BACK SPACE
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LEFT WIN
+  - A
+  - S
+  - D
+  - F
+  - G
+  - DELETE
+  - H
+  - J
+  - K
+  - L
+  - '='
+  - {t: Mouse, h: toggle}
+  - Z
+  - X
+  - C
+  - V
+  - LEFT CONTROL
+  - .
+  - B
+  - N
+  - M
+  - /
+  - ','
   - LSHFT
-  - LCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LALT
+  - SPACE
+  - ENTER
+  - RSHFT
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&mkp MB3'
+  - RIGHT ALT
+  Mouse:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - DEV TOOLS
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Number
-  - Symbol
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - LEFT WIN
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - \
+  - ;
+  - {t: Base, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -51,9 +102,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mkp MB1', type: held}
-  - '&mkp MB2'
-  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - RIGHT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -114,7 +169,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Number:
   - {t: ▽, type: trans}
@@ -156,7 +211,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '-'
@@ -165,7 +220,7 @@ layers:
   - '}'
   - '|'
   - '~'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
