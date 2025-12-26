@@ -94,57 +94,6 @@
         compatible = "zmk,combos";
         timeout-ms = <20>;
         require-prior-idle-ms = <250>;
-
-        combo_reset_layer_left {
-            key-positions = <20 24>;
-            bindings = <&to 6>;
-        };
-
-        combo_reset_layer_right {
-            key-positions = <25 29>;
-            bindings = <&to 6>;
-        };
-
-        combo_reset_central {
-            key-positions = <32 33>;
-            bindings = <&bootloader>;
-            require-prior-idle-ms = <2000>;
-        };
-
-        combo_normal {
-            key-positions = <7 8>;
-            bindings = <&to 0>;
-        };
-
-        combo_fn {
-            key-positions = <27 28>;
-            bindings = <&sl 4>;
-        };
-
-        combo_genshin {
-            key-positions = <5 9>;
-            bindings = <&to 5>;
-        };
-
-        combo_esc {
-            key-positions = <1 2>;
-            bindings = <&kp ESCAPE>;
-        };
-
-        combo_tab {
-            key-positions = <2 3>;
-            bindings = <&kp TAB>;
-        };
-
-        combo_cdel {
-            key-positions = <11 12>;
-            bindings = <&kp LC(BACKSPACE)>;
-        };
-
-        combo_unlock {
-            key-positions = <0 4>;
-            bindings = <&studio_unlock>;
-        };
     };
 
     chosen { zmk,physical-layout = &charybdis_6col_layout; };
@@ -158,7 +107,7 @@
             bindings = <
 &kp ESC       &kp N1  &kp N2  &kp N3     &kp N4    &kp N5              &kp N6         &kp N7     &kp N8  &kp N9  &kp N0    &kp SQT
 &kp TAB       &kp Q   &kp W   &kp E      &kp R     &kp T               &kp BACKSPACE  &kp Y      &kp U   &kp I   &kp O     &kp P
-&kp LEFT_WIN  &kp A   &kp S   &kp D      &kp F     &kp G               &kp DELETE     &kp H      &kp J   &kp K   &kp L     &kp EQUAL
+&kp LEFT_WIN  &kp A   &kp S   &kp D      &kp F     &kp N5              &kp DELETE     &kp H      &kp J   &kp K   &kp L     &kp EQUAL
 &to 1         &kp Z   &kp X   &kp C      &kp V     &kp LEFT_CONTROL    &kp PERIOD     &kp B      &kp N   &kp M   &kp FSLH  &kp COMMA
                               &kp LSHFT  &kp LALT  &kp SPACE           &kp ENTER      &kp RSHFT
                                          &mkp MB1  &mkp MB2            &kp RIGHT_ALT

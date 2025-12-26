@@ -30,7 +30,7 @@ layers:
   - S
   - D
   - F
-  - G
+  - '5'
   - DELETE
   - H
   - J
@@ -256,8 +256,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: Function, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -399,24 +399,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-- p: [20, 24]
-  k: {t: Reset, h: toggle}
-- p: [25, 29]
-  k: {t: Reset, h: toggle}
-- p: [32, 33]
-  k: BOOT LDR
-- p: [7, 8]
-  k: {t: Base, h: toggle}
-- p: [27, 28]
-  k: {t: Function, h: sticky}
-- p: [5, 9]
-  k: {t: Game, h: toggle}
-- p: [1, 2]
-  k: ESCAPE
-- p: [2, 3]
-  k: TAB
-- p: [11, 12]
-  k: Ctl+ BACK SPACE
-- p: [0, 4]
-  k: ZMK Studio
