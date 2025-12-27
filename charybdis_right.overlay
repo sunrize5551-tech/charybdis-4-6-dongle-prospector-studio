@@ -23,7 +23,7 @@
         ;
 };
 
-/* 2. 트랙볼 핀 설정 */
+/* 2. 트랙볼 핀 그룹 설정 */
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -43,7 +43,7 @@
     };
 };
 
-/* 3. 트랙볼 활성화 및 전원 공급 */
+/* 3. 트랙볼 활성화 (CS핀 20번) */
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -58,16 +58,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        /* 스크롤 모드 설정 (선택사항, 일단 기본값) */
-        scroll-layers = <1>; 
-    };
-};
-
-/* 4. 전원 관리 설정 (트랙볼에 전기 공급) */
-/ {
-    /* 트랙볼을 마우스 입력 장치로 등록 */
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
     };
 };
